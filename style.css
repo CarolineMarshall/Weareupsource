@@ -406,4 +406,12 @@ footer h3 {
     order:3;
 
   }
+
+  .banner{
+    color: white;
+    background-image: url("/images/birdseyelaptop.jpg");
+    background-size: cover;
+    background-position: center;
+    min-height: 25rem;
+  }
 }
