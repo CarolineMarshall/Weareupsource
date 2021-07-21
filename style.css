@@ -263,6 +263,13 @@
         align-items: center;
           }
 
+  .leftvertical-line-review{
+        border-left: 1px solid #ccc;
+        margin: 5% 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+                  }
 
     .fas{
       padding: 0.5%
