@@ -391,6 +391,23 @@ footer h3 {
 }
 
 
+
+.morecontent span {
+    display: none;
+}
+.morelink {
+    display: block;
+}
+
+
+.hidden{
+  display: none;
+}
+
+
+
+
+
 @media(max-width:768px){
 
   .Caroline  {
