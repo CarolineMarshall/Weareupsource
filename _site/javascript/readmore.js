@@ -7,6 +7,11 @@ $(".team-member").click(function(){
     $(".list").each(function(){
       if($(this).attr("data-list") == target){
         $(this).slideToggle();
+
+  //       if ($('.team-member').text() == "") {
+  //   $(this).text("Read less")
+  // } else {
+  //   $(this).text("Read more") }
       }});
 
  });

@@ -2,7 +2,7 @@
 layout: default
 Team:
   - Name: Caroline
-    Team-title: The founder and matchmaker
+    Team-title: The Founder and Matchmaker
     Paragraph: Caroline launched Upsource after the first lockdown in July 2020, and was awarded “UK Best Newcomer VA 2021” by the UK VA Conference & Awards.
     Paragraph1: Caroline has been working in the VA industry since 2016, with a background ranging from being a PA for C-Suite executives in the NHS to working in customer experience and a brief stint in events & communications.
     Paragraph2: She started Upsource having become frustrated with the job market after welcoming her first child in 2018. After a disastrous return to work she was made redundant in 2019 and then took furlough in 2020 to care for her toddler. Unable to work from home, Caroline wanted to be able to support business owners like her.
@@ -57,10 +57,7 @@ Team:
           - Researching and booking travel and accommodation
           - Scheduling meetings, creating agendas and taking notes
           - Project management and accountability
-          - What does Upsourcing mean to you?
-          - Delegating the tasks that you dread doing. The ones that are are time-consuming and don't fall within your skill set, so you can focus on the things you love to do.
-          - What would you Upsource from your life or business?
-          - Social media and marketing, not my cup of tea at all!
+
     Q1: What does Upsourcing mean to you?
     A1: Delegating the tasks that you dread doing. The ones that are are time-consuming and don't fall within your skill set, so you can focus on the things you love to do.
     Q2: What would you Upsource from your life or business?
@@ -134,7 +131,7 @@ Team:
     Paragraph: Nicola kicked off her career establishing a solid foundation in traditional corporate business administration. She worked her way up through the ranks to operate at the most senior level. Nicola has spent the past 5 years travelling, working towards a Bachelor of Law Honours Degree, and building out her skill set in the start-up sector. Her main focus has been Client Services and Operations with an incredible eye for detail
     Paragraph1:
     Paragraph2:
-    Tag: Nicola is based in …. and can help you with the below.
+    Tag: Nicola is based in South Africa and can help you with the below.
     Skills:
         - Project management
         - Planning / coordination
@@ -162,7 +159,7 @@ Team:
 
   {% for item in page.Team %}
 <section class="grid margin  flex-flip padded-1">
-      <div class="col-4_md-12 right grid padded vertical-line-review">
+      <div class="col-4-SpaceAround_md-12 right grid padded vertical-line-review">
 
         <div class="col-12 padded">
           <img class="editable"  alt="{{ item.img_alt}}" src=" {{item.Img_path}}" width="1500" />
@@ -170,6 +167,7 @@ Team:
         </div>
 
       </div>
+
 
       <div class="col-7-middle_md-12_sm-12  dark-bg margin padded">
         <div class="col-12 centered">
@@ -180,17 +178,9 @@ Team:
         <h3 class="editable centered">
           {{item.Team-title}} </h3>
 
-<p> {{item.Paragraph}} </p>
-<p>{{item.Paragraph1}}</p>
-<p>{{item.Paragraph2}}</p>
 
 
-
-<div class="button team-member" data-target="{{item.Name}}"> Read More </div>
-
-
-
-<ul class="list hidden"  data-list="{{item.Name}}">
+<ul>
 
  <p>{{item.Tag}}</p>
 
@@ -201,26 +191,28 @@ Team:
 </div>
  {% endfor %}
 
- <h5 class="margin-top"> {{item.Q1}}</h5>
- <p>{{item.A1}}</p>
- <h5>{{item.Q2}}</h5>
- <p>{{item.A2}}</p>
-
 </ul>
 
-<!-- <p>Charlie is based in Hertfordshire, and loves to help with:</p>
-<p>Inbox and diary management</p>
-<p>Contract negotiations</p>
-<p>General administration and organisation</p>
-<p>Researching and booking travel and accommodation</p>
-<p>Scheduling meetings, creating agendas and taking notes</p>
-<p>Project management and accountability</p>
-<p>What does Upsourcing mean to you? </p>
-<p>Delegating the tasks that you dread doing. The ones that are are time-consuming and don't fall within your skill set, so you can focus on the things you love to do.</p>
-<p>What would you Upsource from your life or business? </p>
-<p>Social media and marketing, not my cup of tea at all!</p> -->
 
 
+
+<div class="list hidden"  data-list="{{item.Name}}">
+
+
+<p> {{item.Paragraph}} </p>
+<p>{{item.Paragraph1}}</p>
+<p>{{item.Paragraph2}}</p>
+
+<h5 class="margin-top"> {{item.Q1}}</h5>
+<p>{{item.A1}}</p>
+<h5>{{item.Q2}}</h5>
+<p>{{item.A2}}</p>
+
+</div>
+
+<div class="button team-member" data-target="{{item.Name}}"> Read More </div>
+
+</div>
 
     </section>
 
