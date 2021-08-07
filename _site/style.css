@@ -61,6 +61,11 @@
   .light-text   { color: white; }
   .flex-flip:nth-child(2n){  flex-direction: row-reverse; }
 
+  .flex-flip:nth-child(2n) .vertical-line-review{
+    border-right: none;
+    border-left: 1px solid #CCC;
+    }
+
   .flexcenter{
     display: flex;
     justify-content: center;

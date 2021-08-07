@@ -158,24 +158,27 @@ Team:
 <div class="">
 
   {% for item in page.Team %}
-<section class="grid margin  flex-flip padded-1">
+<section class="grid   flex-flip padded-1">
       <div class="col-4-SpaceAround_md-12 right grid padded vertical-line-review">
 
         <div class="col-12 padded">
-          <img class="editable"  alt="{{ item.img_alt}}" src=" {{item.Img_path}}" width="1500" />
+          <img   alt="{{ item.img_alt}}" src=" {{item.Img_path}}" width="1500" />
 
         </div>
 
       </div>
 
 
-      <div class="col-7-middle_md-12_sm-12  dark-bg margin padded">
+      <div class="col-8-middle_md-12_sm-12 padded-2">
+        <div class="dark-bg padded">
+
+
         <div class="col-12 centered">
-          <h3 class="editable">
+          <h3 class="">
             {{item.Name}}
           </h3>
         </div>
-        <h3 class="editable centered">
+        <h3 class=" centered">
           {{item.Team-title}} </h3>
 
 
@@ -210,8 +213,9 @@ Team:
 
 </div>
 
-<div class="button team-member" data-target="{{item.Name}}"> Read More </div>
+<div class="button team-member" data-target="{{item.Name}}">Read More</div>
 
+</div>
 </div>
 
     </section>
